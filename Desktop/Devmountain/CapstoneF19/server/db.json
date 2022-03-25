@@ -124,5 +124,68 @@
             "class": 3,
             "name": "Try to Train This Face"
         }
+    },
+    {
+        "id": 6,
+        "name": "Baby Jesus",
+        "health": 100,
+        "imageURL": "../public/images/baby-jesus-manger.jpeg",
+        "action1URL": "../public/images/baby-jesus-no-cry.png",
+        "action1": {
+            "class": 1,
+            "name": "No Crying He Made"
+            },
+        "action2URL": "../public/images/baby-jesus-coerce-gifts.png",
+        "action2": {
+            "class": 2,
+            "name": "Coerce Gifts from Wise Men"
+        },
+        "action3URL": "../public/images/baby-jesus-universal-love.png",
+        "action3": {
+            "class": 3,
+            "name": "Love thy Neighbors"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Baby Boo",
+        "health": 100,
+        "imageURL": "../public/images/baby-boo.png",
+        "action1URL": "../public/images/baby-boo-sic-mike.png",
+        "action1": {
+            "class": 1,
+            "name": "Sic Mike Wyzowski"
+            },
+        "action2URL": "../public/images/baby-boo-monsters.png",
+        "action2": {
+            "class": 2,
+            "name": "Monsters Assist"
+        },
+        "action3URL": "../public/images/baby-boo-costume.png",
+        "action3": {
+            "class": 3,
+            "name": "Monster Costume Fashion Show"
+        }
+    },
+    {
+        "id": 8,
+        "name": "Baby Rory",
+        "health": 100,
+        "imageURL": "../public/images/baby-rory.png",
+        "action1URL": "../public/images/baby-rory-sleep.png",
+        "action1": {
+            "class": 1,
+            "name": "Intimidating Sleep"
+            },
+        "action2URL": "../public/images/baby-rory-fuss.png",
+        "action2": {
+            "class": 2,
+            "name": "Extreme Fussiness"
+        },
+        "action3URL": "../public/images/baby-rory-irish.png",
+        "action3": {
+            "class": 3,
+            "name": "Turn Irish"
+        }
     }
 ]
