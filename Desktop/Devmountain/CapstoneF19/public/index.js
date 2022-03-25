@@ -24,24 +24,25 @@ function test () {
     console.log("onclick confirmed");
   };
 function createBabyCard(baby) {
-    console.log(baby)
-    let action1 = baby.action1.name
-    console.log(typeof action1)
+    // console.log(baby)
+    // let action1 = baby.action1.name
+    // console.log(typeof action1)
     const babyCard = document.createElement('div')
     babyCard.classList.add("babiesCard")
     babyCard.innerHTML += `<img alt="baby picture" src=${baby.imageURL} class="babyPicture"/>
     <p class="babyName">${baby.name}<br>HP=${baby.health}</p>
-    <div class="babyButtonContainer">
-        <button onclick="showStats('${baby.action1.name}', '${baby.action2.name}', '${baby.action3.name}')">Show Stats</button>
+    <div class="babyButtonContainer" id="id${baby.id}">
+        <button class="show" onclick="showStats('${baby.id}', '${baby.action1.name}', '${baby.action2.name}', '${baby.action3.name}')">Show Stats</button>
     </div>
     `
     babyContainer.appendChild(babyCard)
 }
 
-function showStats(p1,p2,p3){
-    console.log(p1, p2, p3)
-    document.querySelector(".babiesCard").innerHTML +=
-    `<p>Action 1: ${p1}<br> Action 2: ${p2}<br> Action 3: ${p3}</p>`
+function showStats(id,p1,p2,p3){
+    // console.log(p1, p2, p3)
+    document.querySelector(".show").style.display = "none"
+    document.querySelector(`#id${id}`).innerHTML +=
+    `<p><u>Action 1:</u><br>${p1}<br><u>Action 2:</u><br>${p2}<br><u>Action 3:</u><br>${p3}</p>`
 }
 // axios.get
 
