@@ -1,10 +1,13 @@
 from ctypes.wintypes import RGB
-from turtle import Turtle, Screen
+from turtle import Turtle, Screen, colormode
 import random
+
 
 timmy = Turtle()
 timmy.shape("turtle")
 timmy.color("dodgerblue")
+colormode(255)
+timmy.speed(0)
 
 # Square
 # for _ in range(4):
@@ -52,15 +55,28 @@ def draw_shapes(num_sides, color):
         timmy.right(angle)
         
 
-def random_walk():
-    pass
+def random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    return (r, b, g)
 
-for _ in range(100):
-    timmy.speed(0)
-    timmy.color(colors[random.randint(0, (len(colors) - 1))])
-    timmy.width(10)
-    timmy.forward(40)
-    timmy.setheading(rotation[random.randint(0, (len(rotation) - 1))])
+head_dir = 0
+
+# for _ in range(72):
+#     timmy.color(random_color())
+#     timmy.circle(180)
+#     timmy.setheading(head_dir)
+#     head_dir += 5
+    
+
+# for _ in range(100):
+#     timmy.speed(0)
+#     # timmy.color(colors[random.randint(0, (len(colors) - 1))])
+#     timmy.color(random_color())
+#     timmy.width(10)
+#     timmy.forward(40)
+#     timmy.setheading(rotation[random.randint(0, (len(rotation) - 1))])
 
 
 # for side in range(3, 11):
