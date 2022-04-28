@@ -1,0 +1,7 @@
+Jean-Luc Picard, Captain, Captain of the Starship Enterprise, Human
+William T. Riker, Commander, First Officer, Human
+Geordi La Forge, Lt. Commander, Chief Engineer, Human
+Data, Lt. Commander, Second Officer, Android
+Worf, Lt. Commander, Security Officer, Klingon
+Deanna Troi, Commander, Counselor, Betazoid
+Beverly Crusher, Commander, Chief Medical Officer, Human
